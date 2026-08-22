@@ -1,0 +1,968 @@
+[
+  {
+    "event_id": "EVT-FENT-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Agora Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "apexchems",
+      "display_name": "ApexChems"
+    },
+    "content": {
+      "text": "Pharmaceutical Fentanyl Transdermal System 100mcg/hr. Sealed boxes of 5 patches, Sandoz generic. Ships worldwide with stealth decoy.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://agora_market/evt-fent-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Bohemia Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "nordicpharma",
+      "display_name": "NordicPharma"
+    },
+    "content": {
+      "text": "High purity Fentanyl HCl crystalline powder 98.2% assay. Vacuum sealed mylar with odor-barrier packaging for research purposes.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://bohemia_market/evt-fent-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "darklord99",
+      "display_name": "DarkLord99"
+    },
+    "content": {
+      "text": "Carfentanil analytical reference standard 1mg/ml solution. Certified GC-MS documentation included. Strictly wholesale escrow.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-fent-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Archetyp Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "silkroadtrader",
+      "display_name": "SilkRoadTrader"
+    },
+    "content": {
+      "text": "Pressed blue M30 tablets containing synthetic fentanyl analogue. Precise 2.0mg dosage per press. Domestic stealth express.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://archetyp_market/evt-fent-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "HarmReductionNet",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "safecheck_labs",
+      "display_name": "SafeCheck_Labs"
+    },
+    "content": {
+      "text": "Rapid Fentanyl diagnostic test strips BTNX 20ng/ml lateral flow immunoassay. Pack of 50 test strips for substance adulteration check.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://harmreductionnet/evt-fent-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-06",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor2Door Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "chemsynthetics",
+      "display_name": "ChemSynthetics"
+    },
+    "content": {
+      "text": "4-AP (4-Anilinopiperidine) precursor chemical. CAS 23056-29-9. High purity synthesis intermediate for legitimate research.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor2door_market/evt-fent-06",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-07",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Abacus Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "v_xpress",
+      "display_name": "v_xpress"
+    },
+    "content": {
+      "text": "Sublingual Fentanyl citrate lozenges 400mcg Actiq brand. Authentic blister packaging with batch tracking numbers.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://abacus_market/evt-fent-07",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-08",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Genesis Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "phantomoperator",
+      "display_name": "PhantomOperator"
+    },
+    "content": {
+      "text": "Remifentanil ultra short-acting opioid hydrochloride 2mg lyophilized vials. Cold-chain insulated packaging with temperature sensor.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://genesis_market/evt-fent-08",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-09",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Bohemia Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "eurochems_wholesale",
+      "display_name": "EuroChems_Wholesale"
+    },
+    "content": {
+      "text": "Furanylfentanyl analog research powder. 99.0% verified purity via NMR spectra. Strictly commercial supply.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://bohemia_market/evt-fent-09",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-FENT-10",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor2Door Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "acropharma",
+      "display_name": "AcroPharma"
+    },
+    "content": {
+      "text": "Sufentanil citrate 50mcg/ml ampoules for injection. 10 ampoules per tray. European hospital supply liquidation.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor2door_market/evt-fent-10",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Bohemia Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "chemicalking",
+      "display_name": "ChemicalKing"
+    },
+    "content": {
+      "text": "Pfizer Xanax 2mg Alprazolam white pressed bars with clean snap score. 1000 count bulk vacuum pack. Direct vendor pricing.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://bohemia_market/evt-benz-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "AlphaBay Archive",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "europharmadirect",
+      "display_name": "EuroPharmaDirect"
+    },
+    "content": {
+      "text": "Roche Rivotril 2mg Clonazepam cross-scored tablets. Original manufacturer blister packs of 100 tablets. Ships from NL.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://alphabay_archive/evt-benz-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Agora Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "valiumdirect",
+      "display_name": "ValiumDirect"
+    },
+    "content": {
+      "text": "Bensedin Diazepam 10mg Galenika factory sealed blister boxes. High stock availability, discreet customs declaration.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://agora_market/evt-benz-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Archetyp Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "dutchdrops_hq",
+      "display_name": "DutchDrops_HQ"
+    },
+    "content": {
+      "text": "Pure Alprazolam raw powder 99.4% assay purity. Tested via Marquis and Mecke reagents. Fast tracking dispatched within 12h.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://archetyp_market/evt-benz-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor2Door Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "sedativeking",
+      "display_name": "SedativeKing"
+    },
+    "content": {
+      "text": "Temazepam 30mg Restoril soft gelatin capsules. Yellow/maroon capsules in amber bottles with tamper evident seals.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor2door_market/evt-benz-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-06",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "etizsupply_lab",
+      "display_name": "EtizSupply_Lab"
+    },
+    "content": {
+      "text": "Etizolam pure pharmaceutical grade powder. 50g vacuum sealed foil bag with laboratory COA.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-benz-06",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-BENZ-07",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Abacus Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "pharmafast_eu",
+      "display_name": "PharmaFast_EU"
+    },
+    "content": {
+      "text": "Ksalol 1mg Alprazolam pills manufactured by Galenika. Crisp blister packaging, rapid onset sublingual sedation.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://abacus_market/evt-benz-07",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-OPIO-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Bohemia Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "oxyspecialist",
+      "display_name": "OxySpecialist"
+    },
+    "content": {
+      "text": "Mundipharma OxyContin 80mg OC formulation (crushable). Authentic sealed blister cards of 28 tablets. Domestic delivery.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://bohemia_market/evt-opio-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-OPIO-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "AlphaBay Archive",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "pharmalink",
+      "display_name": "PharmaLink"
+    },
+    "content": {
+      "text": "Dilaudid 8mg Hydromorphone triangle pills (shields). Genuine Abbott manufacturing. Stealth airmail shipping worldwide.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://alphabay_archive/evt-opio-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-OPIO-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Abacus Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "medsupplyco",
+      "display_name": "MedSupplyCo"
+    },
+    "content": {
+      "text": "Methadone hydrochloride 40mg dispersible tablets for substitution therapy. Mallinckrodt pharmaceutical imprint.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://abacus_market/evt-opio-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-OPIO-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "mst_continus_rep",
+      "display_name": "MST_Continus_Rep"
+    },
+    "content": {
+      "text": "Morphine sulfate sustained-release tablets MST Continus 100mg. Bulk wholesale discount for verified forum escrow members.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-opio-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-OPIO-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor2Door Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "buprenorphine_trade",
+      "display_name": "Buprenorphine_Trade"
+    },
+    "content": {
+      "text": "Subutex 8mg Buprenorphine sublingual tablets. Reckitt Benckiser brand. Boxes of 28 tablets with security foil.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor2door_market/evt-opio-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-STIM-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Archetyp Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "crystalclear_ops",
+      "display_name": "CrystalClear_Ops"
+    },
+    "content": {
+      "text": "D-Methamphetamine translucent crystal glass shards. 99.1% purity verified by reagent testing. Heat-sealed in metallic coffee bags.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://archetyp_market/evt-stim-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-STIM-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Agora Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "andeanexport",
+      "display_name": "AndeanExport"
+    },
+    "content": {
+      "text": "Colombian fishscale Cocaine hydrochloride 92% purity. Uncut flake texture with high petroleum sheen. Sourced directly from source.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://agora_market/evt-stim-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-STIM-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Bohemia Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "k_labspecialist",
+      "display_name": "K_LabSpecialist"
+    },
+    "content": {
+      "text": "Ketamine S-isomer crystal needle shards (sugar fine texture). 100% veterinary grade quality imported from Germany.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://bohemia_market/evt-stim-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-STIM-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "AlphaBay Archive",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "dutchchampagne",
+      "display_name": "DutchChampagne"
+    },
+    "content": {
+      "text": "MDMA champagne rocks 84% maximum crystal purity. Lab-certified purity with Marquis reagent immediate dark purple reaction.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://alphabay_archive/evt-stim-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-STIM-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "lucidalchemist",
+      "display_name": "LucidAlchemist"
+    },
+    "content": {
+      "text": "LSD-25 custom blotter sheets 150ug per tab. Aztek artwork print, laid with needlepoint European crystal.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-stim-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor Hidden Service",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "shadowmixer_admin",
+      "display_name": "ShadowMixer_Admin"
+    },
+    "content": {
+      "text": "Zero-log Bitcoin CoinJoin peeling mixer. Breaks blockchain transaction lineage across 12 hops into random unspent transaction outputs.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor_hidden_service/evt-cryp-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Telegram Escrow",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "wasabipool_broker",
+      "display_name": "WasabiPool_Broker"
+    },
+    "content": {
+      "text": "Automated Chaumian CoinJoin coordination pool for Wasabi and Samourai Whirlpool. Low 0.3% mixing fee per unspent UTXO.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://telegram_escrow/evt-cryp-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Russian Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "xmr_atomicbridge",
+      "display_name": "XMR_AtomicBridge"
+    },
+    "content": {
+      "text": "Cross-chain Bitcoin to Monero atomic swap relay. Non-custodial, peer-to-peer liquidity bridge leaving zero KYC audit trail.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://russian_market/evt-cryp-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "fastpeel_relay",
+      "display_name": "FastPeel_Relay"
+    },
+    "content": {
+      "text": "High velocity Bitcoin peeling chain liquidity provider. Splitting large transaction inputs into sub-0.5 BTC randomized outputs.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-cryp-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Genesis Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "finmule_network",
+      "display_name": "FinMule_Network"
+    },
+    "content": {
+      "text": "Indian banking domestic mule accounts (Axis, HDFC, ICICI, SBI) verified with active NetBanking and registered debit cards for crypto liquidation.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://genesis_market/evt-cryp-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CRYP-06",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor Hidden Service",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "bitlaunder_desk",
+      "display_name": "BitLaunder_Desk"
+    },
+    "content": {
+      "text": "Tether USDT Tron TRC-20 to cash-in-hand courier service across Dubai, Mumbai, and Bangkok financial freezones.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor_hidden_service/evt-cryp-06",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CYBR-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Russian Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "dumpking_cc",
+      "display_name": "DumpKing_CC"
+    },
+    "content": {
+      "text": "Fresh US and UK Track 2 credit card dumps with PINs. 95% valid rate guaranteed with auto-checker replacement policy within 2 hours.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://russian_market/evt-cybr-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CYBR-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Genesis Market",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "genesisbotmaster",
+      "display_name": "GenesisBotMaster"
+    },
+    "content": {
+      "text": "Full browser fingerprint bot profile with stolen cookies, saved passwords, and authenticated Google/Stripe sessions.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://genesis_market/evt-cybr-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CYBR-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "identityforge_hq",
+      "display_name": "IdentityForge_HQ"
+    },
+    "content": {
+      "text": "Replica passport and national ID scans with physical utility bill verification packs for bypassing crypto exchange KYC.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-cybr-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CYBR-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "AlphaBay Archive",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "stealthdrop_relay",
+      "display_name": "StealthDrop_Relay"
+    },
+    "content": {
+      "text": "Postal drop addresses and abandoned safehouse locker locations in Germany, UK, and United States for secure darknet parcel receipt.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://alphabay_archive/evt-cybr-04",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-CYBR-05",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Telegram Darknet",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "ransombroker_east",
+      "display_name": "RansomBroker_East"
+    },
+    "content": {
+      "text": "LockBit 3.0 builder leak and Cobalt Strike 4.9 cracked malleable C2 profiles with bypassed AV/EDR signatures.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://telegram_darknet/evt-cybr-05",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-INFR-01",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor Hidden Service",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "offshorebulletproof",
+      "display_name": "OffshoreBulletproof"
+    },
+    "content": {
+      "text": "DMCA-ignored offshore VPS hosting in Seychelles and Moldova. Tor onion routing v3 supported with DDOS protection.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor_hidden_service/evt-infr-01",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-INFR-02",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Telegram Darknet",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "shadowc2_operator",
+      "display_name": "ShadowC2_Operator"
+    },
+    "content": {
+      "text": "Encrypted Telegram C2 dispatch gateway for automated vendor escrow notifications and multisig dispute arbitration.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://telegram_darknet/evt-infr-02",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-INFR-03",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Dread Forum",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "pgp_keymaster",
+      "display_name": "PGP_KeyMaster"
+    },
+    "content": {
+      "text": "Verified RSA 4096-bit master PGP key escrow certification. Fingerprint publication across MIT and SKS keyserver mirrors.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://dread_forum/evt-infr-03",
+      "dataset": "demo_v2_diverse"
+    }
+  },
+  {
+    "event_id": "EVT-INFR-04",
+    "source": "darknet_market_corpus",
+    "platform_type": "darknet_intelligence",
+    "platform_id": "Tor Hidden Service",
+    "timestamp": "2026-08-01T12:00:00Z",
+    "actor": {
+      "raw_id": "jabberotr_network",
+      "display_name": "JabberOTR_Network"
+    },
+    "content": {
+      "text": "Encrypted XMPP/Jabber messaging server with OTR enabled and zero chat logging on volatile RAM storage.",
+      "language": "en",
+      "image_refs": []
+    },
+    "entities": [],
+    "financial": [],
+    "location": null,
+    "provenance": {
+      "source_uri": "synthetic://tor_hidden_service/evt-infr-04",
+      "dataset": "demo_v2_diverse"
+    }
+  }
+]
