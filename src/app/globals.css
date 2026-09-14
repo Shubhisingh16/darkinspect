@@ -1,0 +1,312 @@
+@import "tailwindcss";
+
+@theme {
+  --color-purple-400: #a1a1aa;
+  --color-purple-500: #ffffff;
+  --color-purple-600: #71717a;
+  --color-purple-900: #18181b;
+  --color-blue-400: #a1a1aa;
+  --color-blue-500: #ffffff;
+  --color-blue-600: #71717a;
+  --color-blue-900: #18181b;
+  --color-indigo-400: #a1a1aa;
+  --color-indigo-500: #ffffff;
+  --color-indigo-600: #71717a;
+  --color-indigo-900: #18181b;
+  --color-pink-400: #a1a1aa;
+  --color-pink-500: #ffffff;
+  --color-pink-600: #71717a;
+  --color-pink-900: #18181b;
+
+  --color-gemini-bg: #09090b;
+  --color-gemini-bg-secondary: #18181b;
+  --color-gemini-accent: #ffffff;
+  --color-gemini-purple: #ffffff;
+  --color-gemini-pink: #ffffff;
+  
+  --color-gov-blue: #ffffff; 
+  --color-gov-blue-hover: #e4e4e7; 
+  --color-gov-blue-light: #27272a;
+  
+  --color-nexus-cyan: #ffffff;
+  --color-nexus-amber: #e4e4e7;
+  --color-nexus-red: #f87171;
+  --color-nexus-green: #4ade80;
+  
+  --font-display: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: var(--font-mono), "Space Grotesk", "JetBrains Mono", monospace;
+  --font-sans: var(--font-inter), "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #f4f4f5;
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    background: #000000;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Figma-standard borders */
+.nexus-border { border: 1px solid rgba(255,255,255,0.08); }
+.nexus-border-t { border-top: 1px solid rgba(255,255,255,0.08); }
+.nexus-border-b { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.nexus-border-l { border-left: 1px solid rgba(255,255,255,0.08); }
+.nexus-border-r { border-right: 1px solid rgba(255,255,255,0.08); }
+
+/* Linear-grade Obsidian Glassmorphism */
+.glass {
+  background: rgba(10, 10, 12, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.liquid-glass {
+  background: rgba(12, 12, 14, 0.85);
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Precision Action Buttons */
+.btn-gov {
+  @apply bg-white text-black px-4 py-2 font-medium text-xs rounded-lg tracking-wide transition-all duration-200 hover:bg-zinc-200 active:scale-[0.98] shadow-sm;
+}
+.btn-secondary {
+  @apply bg-zinc-900 text-zinc-300 px-4 py-2 font-medium text-xs rounded-lg tracking-wide transition-all duration-200 hover:bg-zinc-800 hover:text-white border border-white/10 active:scale-[0.98];
+}
+
+/* Architectural Micro-Badges */
+.badge-critical {
+  @apply bg-red-950/50 text-red-400 border border-red-500/30 px-2 py-0.5 rounded-md font-mono text-[10px] uppercase font-semibold;
+}
+.badge-warning {
+  @apply bg-amber-950/50 text-amber-300 border border-amber-500/30 px-2 py-0.5 rounded-md font-mono text-[10px] uppercase font-semibold;
+}
+.badge-info {
+  @apply bg-white/10 text-zinc-200 border border-white/20 px-2 py-0.5 rounded-md font-mono text-[10px] uppercase font-medium;
+}
+.badge-neutral {
+  @apply bg-zinc-900 text-zinc-400 border border-white/10 px-2 py-0.5 rounded-md font-mono text-[10px] uppercase font-medium;
+}
+
+/* Custom Minimalist Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Subtle, clean architectural grid */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  }
+  .glass-panel {
+    background: rgba(9, 9, 11, 0.75);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media print {
+  /* Hide non-printable app navigation and interactive elements */
+  aside,
+  nav,
+  header:not(.print-header),
+  button,
+  .no-print,
+  [data-radix-popper-content-wrapper],
+  [role="region"],
+  .sonner-toast,
+  .btn-gov,
+  .btn-secondary {
+    display: none !important;
+  }
+
+  /* Reset document for clean physical/PDF printing */
+  html, body {
+    background: #ffffff !important;
+    color: #09090b !important;
+    height: auto !important;
+    min-height: 100% !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Prevent ancestor clipping on multi-page reports */
+  main, div, section, article {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+
+  /* Unconstrain fixed modal overlays and animated wrappers during print */
+  div[class*="fixed"],
+  .fixed,
+  div[style*="transform"],
+  [data-projection-id] {
+    position: static !important;
+    inset: auto !important;
+    transform: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Hide everything by default except print targets */
+  body * {
+    visibility: hidden;
+  }
+
+  #print-section,
+  #print-section *,
+  .printable-dossier,
+  .printable-dossier * {
+    visibility: visible !important;
+  }
+
+  /* Printable container styling */
+  #print-section,
+  .printable-dossier {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    background: #ffffff !important;
+    color: #09090b !important;
+    padding: 0.8cm 1.2cm !important;
+    margin: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  }
+
+  /* Text color normalization for paper printing */
+  #print-section *,
+  .printable-dossier * {
+    color: #09090b !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  #print-section .text-white,
+  .printable-dossier .text-white,
+  #print-section .text-zinc-200,
+  .printable-dossier .text-zinc-200,
+  #print-section .text-zinc-300,
+  .printable-dossier .text-zinc-300,
+  #print-section [class*="text-zinc"],
+  .printable-dossier [class*="text-zinc"],
+  #print-section [class*="text-white"],
+  .printable-dossier [class*="text-white"] {
+    color: #09090b !important;
+  }
+
+  #print-section .text-zinc-400,
+  .printable-dossier .text-zinc-400,
+  #print-section .text-zinc-500,
+  .printable-dossier .text-zinc-500 {
+    color: #334155 !important;
+  }
+
+  #print-section .text-emerald-400,
+  .printable-dossier .text-emerald-400,
+  #print-section .text-emerald-300,
+  .printable-dossier .text-emerald-300 {
+    color: #047857 !important;
+    font-weight: 600 !important;
+  }
+
+  #print-section .text-gov-blue,
+  .printable-dossier .text-gov-blue,
+  #print-section .text-cyan-400,
+  .printable-dossier .text-cyan-400 {
+    color: #0369a1 !important;
+    font-weight: 600 !important;
+  }
+
+  #print-section .bg-zinc-950,
+  .printable-dossier .bg-zinc-950,
+  #print-section .bg-black,
+  .printable-dossier .bg-black,
+  #print-section .bg-zinc-900,
+  .printable-dossier .bg-zinc-900,
+  #print-section .glass,
+  .printable-dossier .glass,
+  #print-section [class*="bg-black"],
+  .printable-dossier [class*="bg-black"],
+  #print-section [class*="bg-zinc"],
+  .printable-dossier [class*="bg-zinc"] {
+    background: #f8fafc !important;
+    border: 1px solid #000000 !important;
+    border-radius: 6px !important;
+  }
+
+  #print-section hr,
+  .printable-dossier hr,
+  #print-section .border-b,
+  .printable-dossier .border-b,
+  #print-section .border-t,
+  .printable-dossier .border-t {
+    border-color: #000000 !important;
+  }
+
+  /* Avoid breaking across critical sections */
+  section,
+  .page-break-avoid,
+  tr,
+  .printable-card {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 1.2cm;
+  }
+}

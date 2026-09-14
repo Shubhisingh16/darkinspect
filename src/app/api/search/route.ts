@@ -1,0 +1,153 @@
+import { NextResponse } from 'next/server';
+import prisma from '@/lib/db';
+import { execFile } from 'child_process';
+import { promisify } from 'util';
+import path from 'path';
+import os from 'os';
+
+const execFileAsync = promisify(execFile);
+
+// Semantic query expansion dictionary for Darknet & Cybercrime CTI
+const SEMANTIC_SYNONYMS: Record<string, string[]> = {
+  "fentanyl": ["opioid", "carfentanil", "china white", "synthetic", "m30", "silkroad"],
+  "heroin": ["afghan brown", "diacetylmorphine", "pure smack", "h"],
+  "mixer": ["wasabi", "coinjoin", "tornado", "peeling chain", "tumbler", "whirlpool"],
+  "shadow": ["shadowbroker", "genesis", "pgp", "darklord99", "torland"],
+  "crypto": ["bitcoin", "btc", "wallet", "usdt", "monero", "xmr", "escrow"],
+  "bank": ["hdfc", "sbi", "axis", "icici", "mule", "rtgs", "hawala"],
+  "tor": ["onion", "relay", "hidden service", "exit node", "agora", "mirror"],
+  "carding": ["cc", "dumps", "cvv", "track2", "stripe", "fullz"]
+};
+
+// Query the persistent FAISS daemon or fallback to direct Python CLI execution
+async function queryFaissEngine(
+  query: string, 
+  denseWeight: number, 
+  threshold: number, 
+  indexType: string
+): Promise<{ entities: any[]; metadata: any }> {
+  const params = new URLSearchParams({
+    q: query,
+    denseWeight: denseWeight.toString(),
+    threshold: threshold.toString(),
+    indexType: indexType,
+    topK: "30"
+  });
+
+  // Attempt 1: Fast HTTP query to FAISS daemon (port 5055)
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 2000);
+    
+    const res = await fetch(`http://127.0.0.1:5055/search?${params.toString()}`, {
+      signal: controller.signal,
+    });
+    clearTimeout(timeoutId);
+
+    if (res.ok) {
+      const data = await res.json();
+      return data;
+    }
+  } catch (err: any) {
+    // Daemon might be starting up; proceed to CLI fallback
+  }
+
+  // Attempt 2: Resilient direct Python CLI execution fallback
+  try {
+    const pythonScript = path.join(process.cwd(), 'backend', 'scripts', 'faiss_engine.py');
+    const { stdout } = await execFileAsync('python', [
+      pythonScript,
+      '--query', query,
+      '--dense-weight', denseWeight.toString(),
+      '--threshold', threshold.toString(),
+      '--index-type', indexType,
+      '--top-k', '30'
+    ], { timeout: 10000, maxBuffer: 10 * 1024 * 1024 });
+
+    const parsed = JSON.parse(stdout.trim());
+    if (parsed && Array.isArray(parsed.entities)) {
+      return parsed;
+    }
+  } catch (cliErr: any) {
+    console.error("FAISS CLI execution fallback error:", cliErr);
+  }
+
+  return {
+    entities: [],
+    metadata: {
+      query,
+      totalIndexedVectors: 0,
+      queryLatencyMs: 0,
+      indexType: "FAISS_Error",
+      denseWeight,
+      sparseWeight: 1 - denseWeight
+    }
+  };
+}
+
+export async function GET(request: Request) {
+  const startTime = performance.now();
+  const { searchParams } = new URL(request.url);
+  const q = searchParams.get('q')?.trim() || '';
+  const denseWeight = parseFloat(searchParams.get('denseWeight') || '0.70');
+  const threshold = parseFloat(searchParams.get('threshold') || '0.50');
+  const indexType = searchParams.get('indexType') || 'HNSW'; // HNSW or IndexFlatIP
+
+  if (!q) {
+    return NextResponse.json({
+      entities: [],
+      investigations: [],
+      metadata: {
+        totalIndexedVectors: 215,
+        queryLatencyMs: 0,
+        indexType: `FAISS_${indexType}_Cosine_384d`,
+        semanticExpansions: []
+      }
+    });
+  }
+
+  const queryLower = q.toLowerCase();
+
+  // 1. Semantic expansions
+  const expansions: string[] = [];
+  Object.entries(SEMANTIC_SYNONYMS).forEach(([key, syns]) => {
+    if (queryLower.includes(key)) {
+      expansions.push(...syns);
+    }
+  });
+
+  // 2. Query Genuine FAISS Vector Engine
+  const faissResponse = await queryFaissEngine(q, denseWeight, threshold, indexType);
+
+  // 3. Query Linked Investigations from Database
+  let investigations: any[] = [];
+  try {
+    investigations = await prisma.investigation.findMany({
+      where: {
+        OR: [
+          { title: { contains: q } },
+          { caseId: { contains: q } },
+          ...expansions.slice(0, 3).map(exp => ({ title: { contains: exp } }))
+        ]
+      },
+      take: 10,
+      orderBy: { createdAt: 'desc' }
+    });
+  } catch {
+    // Graceful fallback if SQLite is busy
+  }
+
+  const endTime = performance.now();
+  const totalLatency = parseFloat((endTime - startTime).toFixed(2));
+
+  return NextResponse.json({
+    entities: faissResponse.entities,
+    investigations,
+    metadata: {
+      ...faissResponse.metadata,
+      query: q,
+      totalLatencyMs: totalLatency,
+      semanticExpansions: Array.from(new Set(expansions)).slice(0, 6)
+    }
+  });
+}
